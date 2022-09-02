@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Analysis</title>
+  <link rel="icon" href="https://source.unsplash.com/1600x900/?analysis">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<style>
+  body {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  body {
+    background-color: #efffff;
+     background-size: 50000% 50000%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  .main {
+    margin: auto;
+    max-width: fit-content;
+    padding: 10px;
+  }
+
+  h1 {
+    color: black;
+    font-family: cursive;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* .inner{
+  position:absolute;
+  } */
+  #card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    background-color: blanchedalmond;
+    background: white;
+    /* height: fit-content; */
+    height: 50%;
+    /* width: 400px; */
+  }
+
+  .cantainer {
+    padding: 20px;
+    background-color: blanchedalmond;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    /* border: 2px solid black; */
+    position: relative;
+  }
+
+  p {
+    color: black;
+    font-family: cursive;
+
+  }
+
+  .containerf {
+    padding: 10px;
+    background-color: #aefce8;
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* border: 2px solid black; */
+    text-decoration: none;
+    cursor: pointer;
+  }
+/**********************************/
+/*		 Styling Footer	 */
+/**********************************/
+
+/*** Adding Styles to Company Details ***/
+.company-details{
+	overflow: hidden;
+	padding: 3em 0em;
+	background: #E3F0F7;
+	text-align: center;
+	margin-top: 5em;
+}
+
+#footer #col1,
+#footer #col2,
+#footer #col3{
+	float:inline-end;
+	width: 320px;
+	padding: 0px 40px 0px 40px;
+}
+	
+#footer #icon{
+	display: block;
+	margin-bottom: 1em;
+	font-size: 3em;
+}
+
+/*** Adding Styles to Copyright Div ***/
+.copyright
+{
+	overflow: hidden;
+	padding: 3em 0em;
+	border-top: 20px solid rgba(255, 255, 255, 0.08);
+	text-align: center;
+	background: #4CAF50;
+}
+	
+.copyright p
+{
+	letter-spacing: 1px;
+	font-size: 0.90em;
+	color: rgba(255, 255, 255, 0.6);
+}
+	
+.copyright a
+{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* Styling Social Icons */
+ul.contact{
+	margin: 0;
+	padding: 2em 0em 0em 0em;
+	list-style: none;
+}
+	
+ul.contact li{
+	display: inline-block;
+	padding: 0em 0.10em;
+	font-size: 1em;
+}
+
+ul.contact li a{
+	color: #FFF;
+	display: inline-block;
+	background: #4C93B9;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+</style>
+
+<body>
+  <div class="main" style="padding: 30px; width: fit-content;">
+    <div class="containerf" id="card">
+      <a href="#" style="text-decoration: none;">
+        <h1>Incomming SWE intern @ Microsoft says 10/5=5</h1>
+      </a>
+    </div>
+    <!-- <div class="cantainer" id="card" style="width: 80%; align-items: center; display: inline-block; ">
+       <p class='intro'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quaerat autem atque fugiat ut
+         tempora laboriosam vel exercitationem, consectetur ad reiciendis consequatur eos? Ea accusamus velit
+         perspiciatis esse facilis eos! Earum repellat praesentium aliquam sint culpa quaerat labore nemo excepturi non
+         nobis! Possimus eum ipsam unde ullam sit, perspiciatis error.</p>
+     </div> -->
+
+
+
+    <div class="cantainer left" id="card" style="width: 44% ; float:left;">
+      <div id='chart' class='chart'></div>
+      <p class='chart'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque tenetur aperiam architecto
+        modi reiciendis
+        dicta enim corrupti quos mollitia excepturi culpa, nisi voluptate reprehenderit, repudiandae nostrum error rem
+        eos.</p>
+    </div>
+    <div class="cantainer right" id="card" style="width: 44% ; float:right;">
+      <div id='chart2' class='chart2 inner'></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque tenetur aperiam architecto modi reiciendis
+        dicta enim corrupti quos mollitia excepturi culpa, nisi voluptate reprehenderit, repudiandae nostrum error rem
+        eos.</p>
+    </div>
+    <div class="cantainer left" id="card" style="width: 44% ; float:left;">
+      <div id='chart3' class='chart3 inner'></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque tenetur aperiam architecto modi reiciendis
+        dicta enim corrupti quos mollitia excepturi culpa, nisi voluptate reprehenderit, repudiandae nostrum error rem
+        eos.</p>
+    </div>
+    <div class="cantainer right" id="card" style="width: 44% ; float:right;">
+      <div id='chart4' class='chart4'></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque tenetur aperiam architecto modi reiciendis
+        dicta enim corrupti quos mollitia excepturi culpa, nisi voluptate reprehenderit, repudiandae nostrum error rem
+        eos.</p>
+    </div>
+    <div class="cantainer left" id="card" style="width: 44% ; float:left;">
+      <div id='chart5' class='chart5'></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque tenetur aperiam architecto modi reiciendis
+        dicta enim corrupti quos mollitia excepturi culpa, nisi voluptate reprehenderit, repudiandae nostrum error rem
+        eos.</p>
+    </div>
+
+    <div class="cantainer right" id="card" style="width: 44% ; float:right;">
+      <div id='chart6' class='chart6'></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque tenetur aperiam architecto modi reiciendis
+        dicta enim corrupti quos mollitia excepturi culpa, nisi voluptate reprehenderit, repudiandae nostrum error rem
+        eos.</p>
+    </div>
+  </div>
+
+  <!-- <footer id="footer">
+    <div class="copyright">
+
+
+      <p>© All rights reserved | GeeksforGeeks.</p>
+
+
+
+      <ul class="contact">
+        <li>
+          <a href="#" class="fa fa-twitter">
+
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="fa fa-facebook">
+
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="fa fa-pinterest-p">
+
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer> -->
+
+
+</body>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+  var graphs = {{ graphJSON | safe}};
+  Plotly.plot('chart', graphs, {});
+  var graphs2 = {{ graphJSON2 | safe}};
+  Plotly.plot('chart2', graphs2, {});
+  var graphs3 = {{ graphJSON3 | safe}};
+  Plotly.plot('chart3', graphs3, {});
+  var graphs4 = {{ graphJSON4 | safe}};
+  Plotly.plot('chart4', graphs4, {});
+  var graphs5 = {{ graphJSON5 | safe}};
+  Plotly.plot('chart5', graphs5, {});
+  var graphs6 = {{ graphJSON6 | safe}};
+  Plotly.plot('chart6', graphs6, {});
+</script>
+
+</html>
