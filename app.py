@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, json,redirect,render_template,flash,request
 from flask.globals import request, session
 from flask.helpers import url_for
 from flask_sqlalchemy import SQLAlchemy
@@ -28,24 +28,29 @@ model = pickle.load(open('stresslevel.pkl', 'rb'))
 # mydatabase connection
 local_server=True
 app=Flask(__name__)
-app.secret_key="tandrima"
 
-login_manager=LoginManager(app)
-login_manager.login_view='login'
 
 app = Flask(__name__,
             static_url_path='', 
             static_folder='static',
             template_folder='templates')
 
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:@localhost/mental'
+# app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:@localhost/mental'
+
+app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///database.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
+
 db=SQLAlchemy(app)
+app.secret_key="tandrima"
+login_manager = LoginManager()
+login_manager.init_app(app)
+login_manager.login_view = 'login'
 
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-class User(db.Model):
+class User(db.Model, UserMixin):
     id=db.Column(db.Integer,primary_key=True)
     usn=db.Column(db.String(20),unique=True)
     pas=db.Column(db.String(1000))
@@ -64,13 +69,13 @@ def signup():
         # print(usn,pas)
         encpassword=generate_password_hash(pas)
         user=User.query.filter_by(usn=usn).first()
-        # if user or emailUser:
-        #     flash("Email or srif is already taken","warning")
-        #     return render_template("usersignup.html")
+        if user:
+            flash("Email or srif is already taken","warning")
+            return render_template("usersignup.html")
         new_user=db.engine.execute(f"INSERT INTO `user` (`usn`,`pas`) VALUES ('{usn}','{encpassword}') ")
-        return 'user added'        
-        # flash("SignUp Success Please Login","success")
-        # return render_template("userlogin.html")
+                
+        flash("SignUp Success Please Login","success")
+        return render_template("userlogin.html")        
 
     return render_template("usersignup.html")
 
@@ -82,26 +87,37 @@ def login():
         user=User.query.filter_by(usn=usn).first()
         if user and check_password_hash(user.pas,pas):
             login_user(user)
-            return "Login Success"
-        #     return render_template("index.html")
+            flash("Login Success","info")
+            return render_template("index.html")
         else:
-            return "Invalid Credentials"
-            # return render_template("userlogin.html")
+            flash("Invalid Credentials","danger")
+            return render_template("userlogin.html")
 
 
     return render_template("userlogin.html")
 
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    flash("Logout SuccessFul","warning")
+    return redirect(url_for('login'))
+
+
 @app.route('/music')
+@login_required
 def music():
     return render_template('music.html')
 
 
 @app.route('/quizandgame')
+@login_required
 def quizandgame():
     return render_template('quizandgame.html')
 
     
 @app.route('/exercises')
+@login_required
 def exercises():
     return render_template('exercises.html')
 
