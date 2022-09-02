@@ -77,14 +77,17 @@
     <div class="container">
         <h1> Login </h1>
         <form action="/login" method="post">
-
+           {% include "message.html" %}
             <div class="form-group">
             <input type="text" class="form-control mt-2" placeholder="Enter  Username" name="usn" required>
             </div>
             
             <div class="form-group">
-            <input type="text" class="form-control mt-2" placeholder="Enter  Password" name="pas" required>
+            <input type="password" class="form-control mt-2" placeholder="Enter  Password" name="pas" required>
             </div>
+
+
+
             <br>
             <button type="submit" class="btn btn-info">Login</button>
             

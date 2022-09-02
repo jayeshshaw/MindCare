@@ -2,274 +2,350 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yoga and Exercises</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+  <title>Exercises</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{url_for('static', filename='logo.png')}}" rel="icon">
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-
-
-
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
 <style>
-  #icon {
-    height: fit-content;
-    width: fit-content;
-    padding: 5px;
-    margin: 10px;
-}
-  body{
-    background-color: antiquewhite;
-  }
-  #mainbox{
-    background-color:#71beda;
-    border-radius: 10px;
-  }
-  .services .icon-box {
-    text-align: center;
-    border: 1px solid #fff;
-    padding: 40px 35px;
-    transition: all ease-in-out 0.3s;
-    background: #fff;
-}
+
 </style>
 
 <body>
-  <section id="services" class="services section-bg"  style="background-color: rgb(255, 181, 85);">
-    <div class="container">
 
-      <div class="section-title">
-        <span>Yoga and Exercises</span>
-        <h2>Yoga and Exercises</h2>
-        <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-        <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-        <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
-      </div>
 
+  <header id="header" class="header d-flex align-items-center"
+    style="background-color: rgb(79, 207, 224); color: black;">
 
-        <div class="mainbox icon-box col-lg-12 col-md-6 d-flex align-items-stretch mt-4 mainbox" style="justify-content: center;width: 1200px;" id="mainbox">
-          <div class="icon-box" id='icon'>
-              <img src="{{url_for('static', filename='assets/yoga/chakrasana.gif')}}" alt=" hello">
-          </div>
-
-
-          <div class="icon-box" id='icon'>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-        </div>
-
-
-
-
-
-        <div id="mainbox" class="icon-box col-lg-12 col-md-6 d-flex align-items-stretch mt-4 mainbox" style="justify-content: center;width: 1200px;">
-          
-          <div class="icon-box" id='icon'>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-
-          <div class="icon-box"  id='icon'>
-              <img src="{{url_for('static', filename='assets/yoga/halasana.gif')}}" alt=" hello">
-          </div>
-        </div>
-
-
-
-
-
-    
-        
-        <div id="mainbox" class="icon-box col-lg-12 col-md-6 d-flex align-items-stretch mt-4" style="justify-content: center;width: 1200px;">
-          <div class="icon-box"  id='icon'>
-              <img src="{{url_for('static', filename='assets/yoga/suptaVarjasana.gif')}}" alt=" hello">
-            </div>
-
-
-          <div class="icon-box" id='icon'>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-        </div>
-
-
-
-        <div id="mainbox" class="icon-box col-lg-12 col-md-6 d-flex align-items-stretch mt-4" style="justify-content: center;width: 1200px;">
-          <div class="icon-box" id='icon'>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-
-          <div class="icon-box"  id='icon'>
-              <img src="{{url_for('static', filename='assets/yoga/nataranjasana.gif')}}" alt=" hello">
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-        <div id="mainbox" class="icon-box col-lg-12 col-md-6 d-flex align-items-stretch mt-4" style="justify-content: center;width: 1200px;">
-          
-          <div class="icon-box"  id='icon'>
-            <img src="{{url_for('static', filename='assets/yoga/paschimottanasana.gif')}}" alt=" hello">
-          </div>
-          <div class="icon-box" id='icon'>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-
-        </div>
-
-
-
-
-
-        <div id="mainbox" class="icon-box col-lg-12 col-md-6 d-flex align-items-stretch mt-4" style="justify-content: center;width: 1200px;">
-          <div class="icon-box" id='icon'>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-
-          <div class="icon-box"  id='icon'>
-              <img src="{{url_for('static', filename='assets/yoga/sarvangasana.gif')}}" alt=" hello">
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div id="mainbox" class="icon-box col-lg-12 col-md-6 d-flex align-items-stretch mt-4" style="justify-content: center;width: 1200px;">
-          
-          <div class="icon-box"  id='icon'>
-            <img src="{{url_for('static', filename='assets/yoga/shalabhasana.gif')}}" alt=" hello">
-          </div>
-          <div class="icon-box" id='icon'>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-
-        </div>
-
-
-
-        <div id="mainbox" class="icon-box col-lg-12 col-md-6 d-flex align-items-stretch mt-4" style="justify-content: center;width: 1200px;">
-          <div class="icon-box" id='icon'>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-
-          <div class="icon-box"  id='icon'>
-              <img src="{{url_for('static', filename='assets/yoga/bhujangasana.gif')}}" alt=" hello">
-            </div>
-        </div>
-
-
-
-
-
-        <div id="mainbox" class="icon-box col-lg-12 col-md-6 d-flex align-items-stretch mt-4" style="justify-content: center;width: 1200px;">
-          
-          <div class="icon-box"  id='icon'>
-            <img src="{{url_for('static', filename='assets/yoga/uttanasana.gif')}}" alt=" hello">
-          </div>
-          <div class="icon-box" id='icon'>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-
-        </div>
-
-
-
-        <div id="mainbox" class="icon-box col-lg-12 col-md-6 d-flex align-items-stretch mt-4" style="justify-content: center;width: 1200px;">
-          <div class="icon-box" id='icon'>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <p> deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-
-          <div class="icon-box"  id='icon'>
-              <img src="{{url_for('static', filename='assets/yoga/Dhanurasana.gif')}}" alt=" hello">
-            </div>
-        </div>
-
-
-  </section>
-  <footer id="footer">
-
-    
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>eNno</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/enno-free-simple-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 style="background-color: rgb(79, 207, 224); color: black;">Impact<span>.</span></h1>
+      </a>
     </div>
-  </footer><!-- End Footer -->
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-color: rgb(79, 207, 224); color: black;">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center" ">
+              <h2 style=" background-color: rgb(79, 207, 224); color: black;">Exercises</h2>
+              <p style="background-color: rgb(79, 207, 224); color: black;">Odio et unde deleniti. Deserunt numquam
+                exercitationem. Officiis quo odio sint voluptas consequatur ut
+                a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum
+                dolorem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <nav>
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Blog</li>
+          </ol>
+        </div>
+      </nav> -->
+    </div>
+    <!-- End Breadcrumbs -->
+
+
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 posts-list" style="display: flex; text-align: center; width: 4000px; margin: 10px; ">
+          <div class="col-xl-4 col-md-6 " style="margin-right: 10px;">
+            <article style="background-color: aliceblue;">
+              <div style="float: left; width: 45%;">
+                <img src="assets/yoga/bhujangasana.gif"
+                  alt=" hello" class="img-fluid">
+              </div>
+              <div class="txt" style="float: right; width: 45%;">
+                <h2 class="title">
+                  <a href="">Steps</a>
+                </h2>
+                <p>
+                <ul style="padding: 0;margin: 0;">
+                  <li style="padding: 0;margin: 0;">Drop Down 1</li>
+                  <li>Drop Down 2</li>
+                </ul>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+
+
+        <div class="row gy-4 posts-list" style="display: flex; text-align: center; width: 4000px; margin: 10px; ">
+          <div class="col-xl-4 col-md-6 " style="margin-right: 10px;">
+            <article style="background-color: aliceblue;">
+              <div style="float: left; width: 45%;">
+                <img src="assets/yoga/chakrasana.gif"
+                  alt=" hello" class="img-fluid">
+              </div>
+              <div class="txt" style="float: right; width: 45%;">
+                <h2 class="title">
+                  <a href="">Steps</a>
+                </h2>
+                <p>
+                <ul style="padding: 0;margin: 0;">
+                  <li style="padding: 0;margin: 0;">Drop Down 1</li>
+                  <li>Drop Down 2</li>
+                </ul>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+
+
+
+        <div class="row gy-4 posts-list" style="display: flex; text-align: center; width: 4000px; margin: 10px; ">
+          <div class="col-xl-4 col-md-6 " style="margin-right: 10px;">
+            <article style="background-color: aliceblue;">
+              <div style="float: left; width: 45%;">
+                <img src="assets/yoga/Dhanurasana.gif"
+                  alt=" hello" class="img-fluid">
+              </div>
+              <div class="txt" style="float: right; width: 45%;">
+                <h2 class="title">
+                  <a href="">Steps</a>
+                </h2>
+                <p>
+                <ul style="padding: 0;margin: 0;">
+                  <li style="padding: 0;margin: 0;">Drop Down 1</li>
+                  <li>Drop Down 2</li>
+                </ul>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+
+        <div class="row gy-4 posts-list" style="display: flex; text-align: center; width: 4000px; margin: 10px; ">
+          <div class="col-xl-4 col-md-6 " style="margin-right: 10px;">
+            <article style="background-color: aliceblue;">
+              <div style="float: left; width: 45%;">
+                <img src="assets/yoga/halasana.gif"
+                  alt=" hello" class="img-fluid">
+              </div>
+              <div class="txt" style="float: right; width: 45%;">
+                <h2 class="title">
+                  <a href="">Steps</a>
+                </h2>
+                <p>
+                <ul style="padding: 0;margin: 0;">
+                  <li style="padding: 0;margin: 0;">Drop Down 1</li>
+                  <li>Drop Down 2</li>
+                </ul>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+
+       
+
+
+        <div class="row gy-4 posts-list" style="display: flex; text-align: center; width: 4000px; margin: 10px; ">
+          <div class="col-xl-4 col-md-6 " style="margin-right: 10px;">
+            <article style="background-color: aliceblue;">
+              <div style="float: left; width: 45%;">
+                <img src="assets/yoga/nataranjasana.gif"
+                  alt=" hello" class="img-fluid">
+              </div>
+              <div class="txt" style="float: right; width: 45%;">
+                <h2 class="title">
+                  <a href="">Steps</a>
+                </h2>
+                <p>
+                <ul style="padding: 0;margin: 0;">
+                  <li style="padding: 0;margin: 0;">Drop Down 1</li>
+                  <li>Drop Down 2</li>
+                </ul>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+
+
+
+        <div class="row gy-4 posts-list" style="display: flex; text-align: center; width: 4000px; margin: 10px; ">
+          <div class="col-xl-4 col-md-6 " style="margin-right: 10px;">
+            <article style="background-color: aliceblue;">
+              <div style="float: left; width: 45%;">
+                <img src="assets/yoga/sarvangasana.gif"
+                  alt=" hello" class="img-fluid">
+              </div>
+              <div class="txt" style="float: right; width: 45%;">
+                <h2 class="title">
+                  <a href="">Steps</a>
+                </h2>
+                <p>
+                <ul style="padding: 0;margin: 0;">
+                  <li style="padding: 0;margin: 0;">Drop Down 1</li>
+                  <li>Drop Down 2</li>
+                </ul>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="row gy-4 posts-list" style="display: flex; text-align: center; width: 4000px; margin: 10px; ">
+          <div class="col-xl-4 col-md-6 " style="margin-right: 10px;">
+            <article style="background-color: aliceblue;">
+              <div style="float: left; width: 45%;">
+                <img src="assets/yoga/uttanasana.gif"
+                  alt=" hello" class="img-fluid">
+              </div>
+              <div class="txt" style="float: right; width: 45%;">
+                <h2 class="title">
+                  <a href="">Steps</a>
+                </h2>
+                <p>
+                <ul style="padding: 0;margin: 0;">
+                  <li style="padding: 0;margin: 0;">Drop Down 1</li>
+                  <li>Drop Down 2</li>
+                </ul>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+
+        <div class="row gy-4 posts-list" style="display: flex; text-align: center; width: 4000px; margin: 10px; ">
+          <div class="col-xl-4 col-md-6 " style="margin-right: 10px;">
+            <article style="background-color: aliceblue;">
+              <div style="float: left; width: 45%;">
+                <img src="assets/yoga/shalabhasana.gif"
+                  alt=" hello" class="img-fluid">
+              </div>
+              <div class="txt" style="float: right; width: 45%;">
+                <h2 class="title">
+                  <a href="">Steps</a>
+                </h2>
+                <p>
+                <ul style="padding: 0;margin: 0;">
+                  <li style="padding: 0;margin: 0;">Drop Down 1</li>
+                  <li>Drop Down 2</li>
+                </ul>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+
+        <div class="row gy-4 posts-list" style="display: flex; text-align: center; width: 4000px; margin: 10px; ">
+          <div class="col-xl-4 col-md-6 " style="margin-right: 10px;">
+            <article style="background-color: aliceblue;">
+              <div style="float: left; width: 45%;">
+                <img src="assets/yoga/paschimottanasana.gif"
+                  alt=" hello" class="img-fluid">
+              </div>
+              <div class="txt" style="float: right; width: 45%;">
+                <h2 class="title">
+                  <a href="">Steps</a>
+                </h2>
+                <p>
+                <ul style="padding: 0;margin: 0;">
+                  <li style="padding: 0;margin: 0;">Drop Down 1</li>
+                  <li>Drop Down 2</li>
+                </ul>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </section><!-- End Blog Section -->
+
+  </main>
+  < <!--=======Footer=======-->
+    <footer id="footer" class="footer" style="background-color: rgb(79, 207, 224); color: black;">
+
+      <div class="container">
+        <div class="row gy-4" style="background-color: rgb(79, 207, 224); color: black;">
+          <div class="container mt-4">
+            <div class="copyright">
+              &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+            </div>
+
+          </div>
+          <!-- </div> -->
+
+
+
+        </div>
+      </div>
+
+
+
+    </footer><!-- End Footer -->
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/qng.js"></script>
+
 </body>
 
 </html>
