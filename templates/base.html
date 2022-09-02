@@ -66,6 +66,7 @@
     <i class="fa fa-comments" aria-hidden="true"></i>
   </div>
 
+
   <div class="chat_box" style="width: 500px;">
     <div class="my-conv-form-wrapper">
       <form action="" method="GET" class="hidden">
@@ -149,7 +150,7 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#testimonials">Blogs</a></li>
           <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#cta">Call to Action</a></li>
           {% if current_user.is_authenticated and current_user.usn %}
            <li class="dropdown"><a href="/login"><span>Welcome {{current_user.usn}}</span> <i
                 class="bi bi-chevron-down"></i></a>
@@ -264,34 +265,27 @@
         <div class="section-title">
           <span>About Us</span>
           <h2>About Us</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
         </div>
+        
+        <h3 style="color: white; 
+        font-size: 23px;">MindCare is a mental health solution that aims to provide users with easy access to resources 
+          related to mental wellbeing.</h3>
         <div class="row">
           <div class="col-lg-6">
             <img src="assets/img/about.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
             <ul style="color: white;">
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate trideta storacalaperda</li>
+              <li><i class="bi bi-check-circle"></i>Check your Stress Level and also check the analysis of people suffering from mental stress across the world..</li>
+              <li><i class="bi bi-check-circle"></i>MindCare uses fun-psychological tests to cure patients. It includes Music Therapy for patients which reduces stress levels by meditating.</li>
+              <li><i class="bi bi-check-circle"></i> Here users can play brainstorming games and play fun quizzes which will help them to learn things in a fun way.
+                Yoga and Exercises are very important in order to reduce stress level which is also available on our website.</li>
             </ul>
           </div>
         </div>
 
       </div>
     </section><!-- End About Section -->
-
-
-
-
-
-
-
-
-
 
 
     <!-- ======= Counts Section ======= -->
@@ -341,7 +335,7 @@
         <div class="section-title">
           <span>Services</span>
           <h2>Services</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <p>Get all the Solution to your Problems and Enjoy Your Life. </p>
         </div>
 
         <div class="row gy-5" style="display:flex; justify-content: space-around; margin-bottom: 30px;">
@@ -358,8 +352,7 @@
                 <a href="{{url_for('analysis')}}" class="stretched-link">
                   <h3>Analysis</h3>
                 </a>
-                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
-                  adipisci neque.</p>
+                <p>Pictorial/Graphical representation of various stress related data which include types of stress, reasons for stress, subreddit posts versus the social karma points, etc.</p>
                 <a href="{{url_for('analysis')}}" class="stretched-link"></a>
               </div>
             </div>
@@ -377,8 +370,7 @@
                 <a href="/i" class="stretched-link">
                   <h3>Stress Detection</h3>
                 </a>
-                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
-                  adipisci neque.</p>
+                <p>Predict your stress level by taking Sleeping Hours, Blood Pressure Rate, Respiration Rate and Maximum Heart Rate as input.</p>
                 <a href="/i" class="stretched-link"></a>
               </div>
             </div>
@@ -592,10 +584,10 @@
 
         <div class="text-center">
           <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.</p>
-          <a class="cta-btn" href="#" style="text-decoration: none;">Call To Action</a>
+          <p> Visit this site to get access to all the helpline numbers of all the doctors and contact 
+            them in case of any emergency.
+          </p>
+          <a class="cta-btn" href="https://www.thelivelovelaughfoundation.org/helpline" style="text-decoration: none;">Call To Action</a>
         </div>
 
       </div>
@@ -759,9 +751,10 @@
 
         <div class="row  justify-content-center">
           <div class="col-lg-6">
-            <h3>eNno</h3>
-            <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi
-              placeat.</p>
+            <h3>MindCare</h3>
+            <p>You can contact us in the social media handles mentioned below. We will try to answer all your 
+              queries. 
+            </p>
           </div>
         </div>
 
@@ -779,17 +772,13 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>eNno</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>MindCare</span></strong>. All Rights Reserved
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/enno-free-simple-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div class="credits">  Designed by <a href="https://bootstrapmade.com/">Jayesh & Tandrima</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
