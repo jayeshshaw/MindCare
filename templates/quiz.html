@@ -402,7 +402,7 @@ footer button.show{
     <div class="info_box">
         <div class="info-title"><span>Some Rules of this Quiz</span></div>
         <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">1. You will have only <span>10 seconds</span> per each question.</div>
             <div class="info">2. Once you select your answer, it can't be undone.</div>
             <div class="info">3. You can't select any option once time goes off.</div>
             <div class="info">4. You can't exit from the Quiz while you're playing.</div>
@@ -420,7 +420,7 @@ footer button.show{
             <div class="title">Awesome Quiz Application</div>
             <div class="timer">
                 <div class="time_left_txt">Time Left</div>
-                <div class="timer_sec">15</div>
+                <div class="timer_sec">10</div>
             </div>
             <div class="time_line"></div>
         </header>
@@ -469,73 +469,120 @@ footer button.show{
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "What is the national language of India?",
+    answer: "Hindi",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "English",
+      "Urdu",
+      "Hindi",
+      "Sanskrit"
     ]
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "What is 2*2/2?",
+    answer: "2",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "3",
+      "2",
+      "1",
+      "Syntax Error"
     ]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "Which social media App is used the most?",
+    answer: "Facebook",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "Instagram",
+      "Facebook",
+      "Snapchat",
+      "All the above"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "What is the keyboard shortcut for closing a app ?",
+    answer: "Alt + F4",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Ctrl + Close",
+      "Alt + F4",
+      "Fn + F4",
+      "None of the above"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "Which of the following is not a programming language?",
+    answer: "HTML",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Rubi",
+      "C#",
+      "Carbon",
+      "HTML"
     ]
   },
   // you can uncomment the below codes and make duplicate as more as you want to add question
   // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
 
-  //   {
-  //   numb: 6,
-  //   question: "Your Question is Here",
-  //   answer: "Correct answer of the question is here",
-  //   options: [
-  //     "Option 1",
-  //     "option 2",
-  //     "option 3",
-  //     "option 4"
-  //   ]
-  // },
+    {
+    numb: 6,
+    question: "Which planet is closest to Earth?",
+    answer: "Mercury",
+    options: [
+      "Mercury",
+      "Saturn",
+      "Venus",
+      "Mars"
+    ]
+  },
+
+  {
+    numb: 7,
+    question: " Development of a country can generally be determined by: ",
+    answer: "Per capita income",
+    options: [
+      "Per capita income",
+      "Average literacy level",
+      "Health status of its people",
+      "None of these"
+    ]
+  },
+
+  {
+    numb: 8,
+    question: "  For calculating Body Mass Index (BMI), weight of the person is divided by the:: ",
+    answer: "Square of the height",
+    options: [
+      "Square of the weight",
+      "Square of the height",
+      "Square root of the height",
+      "Square of the sum of height and weight"
+    ]
+  },
+  {
+    numb: 9,
+    question: "  What is the biggest ocean in the world? ",
+    answer: "The Pacific",
+    options: [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "The Pacific",
+      "Bay of Bengal"
+    ]
+  },
+  {
+    numb: 10,
+    question: " In what city would you find the Eiffel Tower?",
+    answer: "Paris",
+    options: [
+      "New York City",
+      "America",
+      "London",
+      "Paris"
+    ]
+  },
+  
 ];
 //selecting all required elements
 const start_btn = document.querySelector(".start_btn button");
@@ -565,11 +612,11 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(15); //calling startTimer function
+    startTimer(10); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
 
-let timeValue =  15;
+let timeValue =  10;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -584,7 +631,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timeValue = 15; 
+    timeValue = 10; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;

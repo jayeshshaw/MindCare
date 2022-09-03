@@ -72,7 +72,8 @@ def signup():
         if user:
             flash("Email or srif is already taken","warning")
             return render_template("usersignup.html")
-        new_user=db.engine.execute(f"INSERT INTO `user` (`usn`,`pas`) VALUES ('{usn}','{encpassword}') ")
+            
+        db.engine.execute(f"INSERT INTO `user` (`usn`,`pas`) VALUES ('{usn}','{encpassword}') ")
                 
         flash("SignUp Success Please Login","success")
         return render_template("userlogin.html")        

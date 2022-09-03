@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Impact Bootstrap Template - Blog</title>
+  <title>Play Games and answer Quizzes</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -53,46 +53,44 @@
   </section> -->
   <!-- End Top Bar -->
 
-  <header id="header" class="header d-flex align-items-center"
+  <!-- <header id="header" class="header d-flex align-items-center"
     style="background-color: rgb(79, 207, 224); color: black;">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 style="background-color: rgb(79, 207, 224); color: black;">Impact<span>.</span></h1>
       </a>
 
 
     </div>
-  </header><!-- End Header -->
+  </header> -->
+  <!-- End Header -->
   <!-- End Header -->
 
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-color: rgb(79, 207, 224); color: black;">
+      <div class="page-header d-flex align-items-center" style="background-image: url(https://gamethinking.io/wp-content/uploads/sites/5/2018/12/quiz-background.png); height: 400px;color: black;">
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
-            <div class="col-lg-6 text-center" ">
-              <h2 style=" background-color: rgb(79, 207, 224); color: black;">Quiz and Fun Games</h2>
-              <p style="background-color: rgb(79, 207, 224); color: black;">Odio et unde deleniti. Deserunt numquam
-                exercitationem. Officiis quo odio sint voluptas consequatur ut
-                a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum
-                dolorem.</p>
+            <div class="col-lg-6 text-center" style=" padding: 7px; border-radius: 20px; background-color: rgb(240, 236, 236);">
+              <h2 style=" color: black;">Quiz and Fun Games</h2>
+              <p style=" color: black;"> Find the ways to improve your attention and focus on things that matter.
+                We have all the tools, the greatest and the best.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <!-- <nav>
+       <!-- <nav>
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Blog</li>
           </ol>
         </div>
-      </nav> -->
+      </nav>  -->
     </div>
     <!-- End Breadcrumbs -->
 
@@ -102,7 +100,7 @@
     <section id="blog" class="blog">
       <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4 posts-list" style="display: flex; justify-content: space-evenly; text-align: center;">
+        <div class="row gy-4 posts-list" style=" display: flex; justify-content: space-evenly; text-align: center;">
 
           <div class="col-xl-4 col-md-6 " style="margin-right: 10px;">
             <article>
@@ -112,11 +110,13 @@
                     alt=" hello" class="img-fluid">
               </div>
 
-              <p class="post-category">Politics</p>
-
-              <h2 class="title">
-                <a href="{{url_for('quiz')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
+              <a href="{{url_for('quiz')}}">
+                <h2 class="title">Fun Quizzes</h2>
+  
+                <p class="post-category">
+                  Test your knowlwdge by answering simple quizzes
+                </p>
+              </a>
 
             </article>
           </div>
@@ -128,12 +128,13 @@
               <div class="post-img">
                 <img src="{{url_for('static', filename='assets/img/cup-game.jpg')}}" alt="nacho" class="img-fluid">
               </div>
+              <a href="{{url_for('game')}}">
+              <h2 class="title">Find The Ball</h2>
 
-              <p class="post-category">Sports</p>
-
-              <h2 class="title">
-                <a href="{{url_for('game')}}">Nisi magni odit consequatur autem nulla dolorem</a>
-              </h2>
+              <p class="post-category">
+                The act or process of concentrating, especially the fixing of close, undivided attention.
+              </p>
+            </a>
             </article>
             <!-- End post list item -->
 
@@ -143,10 +144,10 @@
 
   </main>
   < <!--=======Footer=======-->
-    <footer id="footer" class="footer" style="background-color: rgb(79, 207, 224); color: black;">
+    <footer id="footer" class="footer" style="background-color: rgb(119, 168, 220); color: black;">
 
       <div class="container">
-        <div class="row gy-4" style="background-color: rgb(79, 207, 224); color: black;">
+        <div class="row gy-4" style="background-color: rgb(119, 168, 220); color: black;">
           <div class="container mt-4">
             <div class="copyright">
               &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
