@@ -31,6 +31,7 @@ MindCare is a mental health solution that aims to provide users with easy access
 ![image](https://img.shields.io/badge/Numpy-342B029.svg?&style=for-the-badge&logo=numpy&logoColor=white)&nbsp;&nbsp;
 ![image](https://img.shields.io/badge/scikit%20learn-FF8282?style=for-the-badge&logo=scikit-learn&logoColor=white)&nbsp;&nbsp;
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)&nbsp;&nbsp;
+![image](https://img.shields.io/badge/sqlite-E34F26?style=for-the-badge&logo=sqlite&logoColor=white)&nbsp;&nbsp;
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)&nbsp;&nbsp;
 ![image](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)&nbsp;&nbsp;
 ![image](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)&nbsp;&nbsp;
