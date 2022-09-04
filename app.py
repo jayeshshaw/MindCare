@@ -70,7 +70,7 @@ def signup():
         encpassword=generate_password_hash(pas)
         user=User.query.filter_by(usn=usn).first()
         if user:
-            flash("Email or srif is already taken","warning")
+            flash("UserID is already taken","warning")
             return render_template("usersignup.html")
             
         db.engine.execute(f"INSERT INTO `user` (`usn`,`pas`) VALUES ('{usn}','{encpassword}') ")
