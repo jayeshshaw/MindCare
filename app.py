@@ -7,8 +7,6 @@ from werkzeug.security import generate_password_hash,check_password_hash
 
 from flask_login import login_required,logout_user,login_user,login_manager,LoginManager,current_user
 
-#from flask_mail import Mail
-
 
 import json
 import numpy as np
@@ -35,7 +33,6 @@ app = Flask(__name__,
             static_folder='static',
             template_folder='templates')
 
-# app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:@localhost/mental'
 
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
@@ -59,7 +56,7 @@ class User(db.Model, UserMixin):
 def home():
     return render_template('index.html')
 
-@app.route('/signup')
+# @app.route('/signup')
 @app.route('/signup',methods=['POST','GET'])
 def signup():
     if request.method=="POST":
@@ -123,17 +120,18 @@ def exercises():
     return render_template('exercises.html')
 
 @app.route('/quiz')
+@login_required
 def quiz():
     return render_template('quiz.html')
 
 @app.route('/game')
+@login_required
 def game():
     return render_template('game.html')
 
 
 @app.route('/analysis',methods=['GET'])
 def analysis():
-     #reading the dataset
     train_df = pd.read_csv('dreaddit-train.csv',encoding='ISO-8859-1')
     train_df.drop(['text', 'post_id' , 'sentence_range', 'id', 'social_timestamp'], axis=1, inplace=True)
     values = train_df['subreddit'].value_counts()
@@ -194,7 +192,6 @@ def i():
     return render_template('stress.html')
 
 
-
 @app.route('/stressdetect',methods=['POST'])
 def stressdetect():
     int_features = [int(x) for x in request.form.values()]
@@ -206,10 +203,6 @@ def stressdetect():
     elif prediction=="Presence":
         data="You are having High Stress!! Consult a doctor and get the helpline number from our chatbot"
     return render_template('stress.html', prediction_text3='Stress Level is: {}'.format(data))
-
-
-
-
 
 if __name__=="__main__":
     app.run(debug=True)
