@@ -4,7 +4,7 @@
 
 *****
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/jayeshshaw/MindCare?label=Last%20commit&color=green&logo=git&logoColor=white&style=flat-square)](https://github.com/tandrimasingha/Data-Analysis)
+[![GitHub last commit](https://img.shields.io/github/last-commit/jayeshshaw/MindCare?label=Last%20commit&color=green&logo=git&logoColor=white&style=flat-square)](https://github.com/jayeshshaw/MindCare)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jayeshshaw/MindCare?label=Code%20size&logo=python&logoColor=white&style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/jayeshshaw/MindCare?label=Repo%20size&color=red&logo=github&logoColor=white&style=flat-square)
 ![GitHub stars](https://img.shields.io/github/stars/jayeshshaw/MindCare?label=Stars&logo=github&style=flat-square)
